@@ -76,13 +76,17 @@ function NavBar() {
 function Footer() {
   return (
     <>
-      <footer className="page-footer font-small white pt-4" fixed="bottom">
+      <footer className="page-footer font-small white pt-4 fixed-bottom">
         <div className="container-fluid text-center text-md-left">
           <div className="row">
             <div className="col-md-6 mt-md-0 mt-3">
               <h5 className="text-uppercase">Ludorum && Code</h5>
-              <p >Haciendo planes a tu lado, para que nada sea un sueño...
-                sino, una realidad el dia de mañana.</p>
+              <p>
+                Haciendo planes a tu lado, para que nada sea un sueño...
+                <p>
+                  sino, una realidad el dia de mañana.
+                </p>
+              </p>
             </div>
 
             <hr className="clearfix w-100 d-md-none pb-0" />
@@ -90,27 +94,29 @@ function Footer() {
             <div className="col-md-3 mb-md-0 mb-3">
               <h5 className="text-uppercase">Navegacion</h5>
               <ul className="list-unstyled">
-                <li><a href="#" id="a">Nosotros</a></li>
-                <li><a href="#" id="a">Proyectos</a></li>
-                <li><a href="#" id="a">Clientes y resultados</a></li>
-                <li><a href="#" id="a">Link 4</a></li>
+                <li><a href="#" class="word">Nosotros</a></li>
+                <li><a href="#" class="word">Proyectos</a></li>
+                <li><a href="#" class="word">Clientes y resultados</a></li>
+                <li><a href="#" class="word">Link 4</a></li>
               </ul>
             </div>
 
             <div className="col-md-3 mb-md-0 mb-3">
               <h5 className="text-uppercase">Redes y Contacto</h5>
               <ul className="list-unstyled">
-                <li><a href="#" id="a">Instagram</a></li>
-                <li><a href="#" id="a">Facebook</a></li>
-                <li><a href="tel:8711324475" id="a">Celular: 8711324475</a></li>
-                <li><a href="#" id="a">contactoludorum@gmail.com</a></li>
+                <li><a href="#" class="word">Instagram</a></li>
+                <li><a href="#" class="word">Facebook</a></li>
+                <li><a href="tel:8711324475" class="word">Celular: 8711324475</a></li>
+                <li><a href="#" class="word">contactoludorum@gmail.com</a></li>
               </ul>
             </div>
           </div>
         </div>
 
         <div className="footer-copyright text-center py-3">
-          © 2026 All Copyrights Are Reserved: Ludorum && Code.
+          <p>
+            © 2026 All Copyrights Are Reserved: Ludorum && Code.
+          </p>
         </div>
 
       </footer >

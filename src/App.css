@@ -14,10 +14,18 @@ footer
   display: flex;
   flex: auto;
   text-align: center;
+  width: auto;
+  position:fixed;
+  background-color: #FFFF;
 }
 
-#a
+.word
 {
   text-decoration: none;
-  color: #FFFF;
+  color:inherit;
+}
+
+.word:hover
+{
+  color: #d309e6;
 }
