@@ -2,9 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fas, far, fab)
 import './App.css'
 
 function Carrousel() {
@@ -79,7 +83,7 @@ function Footer() {
       <footer className="page-footer font-small white pt-4 fixed-bottom">
         <div className="container-fluid text-center text-md-left">
           <div className="row">
-            <div className="col-md-6 mt-md-0 mt-3">
+            <div className="col-md-6 mt-md-0 mt-3 py-5">
               <h5 className="text-uppercase">Ludorum && Code</h5>
               <p>
                 Haciendo planes a tu lado, para que nada sea un sueño...
@@ -91,7 +95,7 @@ function Footer() {
 
             <hr className="clearfix w-100 d-md-none pb-0" />
 
-            <div className="col-md-3 mb-md-0 mb-3">
+            <div className="col-md-3 mb-md-0 mb-3 py-2">
               <h5 className="text-uppercase">Navegacion</h5>
               <ul className="list-unstyled">
                 <li><a href="#" class="word">Nosotros</a></li>
@@ -101,22 +105,23 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="col-md-3 mb-md-0 mb-3">
+            <div className="col-md-3 mb-md-0 mb-3 py-2">
               <h5 className="text-uppercase">Redes y Contacto</h5>
               <ul className="list-unstyled">
                 <li><a href="#" class="word">Instagram</a></li>
                 <li><a href="#" class="word">Facebook</a></li>
-                <li><a href="tel:8711324475" class="word">Celular: 8711324475</a></li>
+                <li><a href="wa:8711324475" class="word"> <FontAwesomeIcon icon="fa-solid fa-dog" /> </a></li>
+                <li><a href="#"></a>  </li>
                 <li><a href="#" class="word">contactoludorum@gmail.com</a></li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div className="footer-copyright text-center py-3">
-          <p>
+        <div className="footer-copyright text-center py-5">
+          <ul>
             © 2026 All Copyrights Are Reserved: Ludorum && Code.
-          </p>
+          </ul>
         </div>
 
       </footer >
