@@ -13,25 +13,34 @@ import './App.css'
 
 function Carrousel() {
   return (
-    <Carousel>
+    <Carousel fade>
       <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
+        <img
+          className="w-100"
+          src="public/Imgs/DS2_1_.jpg"
+        />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
+        <img
+          className="w-100"
+          src="public/Imgs/Gemini_Generated_Image_clsrfqclsrfqclsr.png"
+        />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
+        <img
+          className="d-block w-100"
+          src="public/Imgs/ninah(3).png"
+        />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h5>Third slide label</h5>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -46,27 +55,17 @@ function NavBar() {
     <>
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" fixed="top" bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">LUDORUM && CODE</Navbar.Brand>
+          <Navbar.Brand href="#hero" id="nav_title">LUDORUM && CODE</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Nosotros</Nav.Link>
-              <Nav.Link href="#pricing">Proyectos y Clientes</Nav.Link>
-              <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#Us">Nosotros</Nav.Link>
+              <Nav.Link href="#clients">Clientes</Nav.Link>
+              <Nav.Link href="#pricing" >Planes y Precios </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
+              <Nav.Link href="#politics">Politicas de seguridad</Nav.Link>
+              <Nav.Link eventKey={2} href="#tech">
                 Tecnologias Utilizadas
               </Nav.Link>
             </Nav>
@@ -98,20 +97,20 @@ function Footer() {
             <div className="col-md-3 mb-md-0 mb-3 py-2">
               <h5 className="text-uppercase">Navegacion</h5>
               <ul className="list-unstyled">
-                <li><a href="#" class="word">Nosotros</a></li>
-                <li><a href="#" class="word">Proyectos</a></li>
-                <li><a href="#" class="word">Clientes y resultados</a></li>
-                <li><a href="#" class="word">Link 4</a></li>
+                <li><a href="#Us" class="word">Nosotros</a></li>
+                <li><a href="#clients" class="word">Clientes</a></li>
+                <li><a href="#pricing" class="word">Planes y precios</a></li>
+                <li><a href="#politics" class="word">Politicas de seguridad</a></li>
               </ul>
             </div>
 
             <div className="col-md-3 mb-md-0 mb-3 py-2">
               <h5 className="text-uppercase">Redes y Contacto</h5>
               <ul className="list-unstyled">
-                <li><a href="#" class="word">Instagram</a></li>
-                <li><a href="#" class="word">Facebook</a></li>
+                <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-whatsapp" /></a></li>
+                <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a></li>
                 <li><a href="wa:8711324475" class="word"> <FontAwesomeIcon icon="fa-solid fa-dog" /> </a></li>
-                <li><a href="#"></a>  </li>
+                <li><a href="#" class="word"> <FontAwesomeIcon icon="fa-brands fa-instagram"/> </a> </li>
                 <li><a href="#" class="word">contactoludorum@gmail.com</a></li>
               </ul>
             </div>
@@ -138,13 +137,23 @@ function App() {
       <NavBar />
       <div>
         <main>
-          <section></section>
 
-          <section></section>
+          <section id="hero">
+            <Carrousel />
+          </section>
 
-          <section></section>
+          <section id="Us">
 
-          <section></section>
+          </section>
+
+          <section id="">
+
+          </section>
+
+          <section id="">
+
+          </section>
+
         </main>
       </div>
 
