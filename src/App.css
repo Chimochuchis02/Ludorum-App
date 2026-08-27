@@ -6,7 +6,12 @@
 }
 
 body{
-  background-color: rgba(25, 135, 255, 1);
+  background-color: #FFFF;
+}
+
+#nav_title
+{
+  color: #d309e6;
 }
 
 footer
