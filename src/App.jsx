@@ -17,17 +17,17 @@ function Carrousel() {
       <Carousel.Item>
         <img
           className="w-100"
-          src="public/Imgs/DS2_1_.jpg"
+          src="public/images/fogata.png"
         />
         <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Promocion Especial de Septiembre</h5>
+          <p>1500.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="w-100"
-          src="public/Imgs/Gemini_Generated_Image_clsrfqclsrfqclsr.png"
+          src="public/images/LOGO.jpg"
         />
         <Carousel.Caption>
           <h5>Second slide label</h5>
@@ -37,7 +37,7 @@ function Carrousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="public/Imgs/ninah(3).png"
+          src="public/images/DS2_1_.jpg"
         />
         <Carousel.Caption>
           <h5>Third slide label</h5>
@@ -143,7 +143,7 @@ function App() {
           </section>
 
           <section id="Us">
-
+            
           </section>
 
           <section id="">
