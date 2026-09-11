@@ -5,32 +5,56 @@
   text-align: center;
 }
 
-body{
+body {
   background-color: #FFFF;
 }
 
-#nav_title
-{
-  color: #d309e6;
+#nav_title {
+  color: #fff;
 }
 
-footer
-{
+footer {
   display: flex;
   flex: auto;
   text-align: center;
   width: auto;
-  position:fixed;
+  position: fixed;
   background-color: #FFFF;
 }
 
-.word
-{
+.word {
   text-decoration: none;
-  color:inherit;
+  color: #FFFF;
 }
 
-.word:hover
-{
+.word:hover {
   color: #d309e6;
+}
+
+.NavBar {
+  background-Color: #7B2CBF;
+}
+
+#nosotros,
+#clientes,
+#pyp,
+#politica,
+#contacto {
+  color: #FFFF;
+}
+
+#title_footer {
+  color: #FFFF;
+}
+
+#text_footer {
+  color: #FFFF;
+}
+
+.word_title {
+  color: #FFFF;
+}
+
+.word_copyright{
+  color: #FFFF;
 }
