@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Carousel from 'react-bootstrap/Carousel';
+import { CardGroup, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -10,45 +11,6 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, far, fab)
 import './App.css'
-
-function Carrousel() {
-  return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="w-100"
-          src="public/images/fogata.png"
-        />
-        <Carousel.Caption>
-          <h5>Promocion Especial de Septiembre</h5>
-          <p>1500.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="w-100"
-          src="public/images/LOGO.jpg"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="public/images/DS2_1_.jpg"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
-}
 
 function NavBar() {
   return (
@@ -110,7 +72,7 @@ function Footer() {
                 <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-whatsapp" /></a></li>
                 <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a></li>
                 <li><a href="wa:8711324475" class="word"> <FontAwesomeIcon icon="fa-solid fa-dog" /> </a></li>
-                <li><a href="#" class="word"> <FontAwesomeIcon icon="fa-brands fa-instagram"/> </a> </li>
+                <li><a href="#" class="word"> <FontAwesomeIcon icon="fa-brands fa-instagram" /> </a> </li>
                 <li><a href="#" class="word">contactoludorum@gmail.com</a></li>
               </ul>
             </div>
@@ -130,6 +92,79 @@ function Footer() {
 
 }
 
+function Cards() {
+  return (
+    <>
+      <CardGroup style={{ padding: '75px' }} className='gap-5'>
+        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
+          <Card.Body>
+            <Card.Title> <h5 style={{ color: '#FFFF' }}>Sistema Unico</h5> </Card.Title>
+            <Card.Text>
+              <h2 style={{ color: '#FFFF' }}>$7,500MXN*/<small>unico</small> </h2>
+              <p style={{ color: '#FFFF' }}>* Pago unico - el sistema es 100% tuyo </p>
+              <p style={{ color: '#FFFF' }}>* Arquitectura personalizada a tu negocio
+                (Cotizador, Catálogo o Panel).</p>
+              <p style={{ color: '#FFFF' }}>* Generación automática de reportes y
+                PDF con tu marca.</p>
+              <p style={{ color: '#FFFF' }}>* Propiedad total del cliente (cero rentas).</p>
+            </Card.Text>
+            <button style={{ borderRadius: '16px' }}>Soliticar mas información</button>
+          </Card.Body>
+          <Card.Footer>
+            <small style={{ color: '#FFFF' }}> * ¡Disfruta tambien del 50%
+              de este plan y los demas planes.</small>
+          </Card.Footer>
+        </Card>
+
+        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
+          <Card.Body>
+            <Card.Title> <h5 style={{ color: '#FFFF' }}>Mantenimiento Base</h5> </Card.Title>
+            <Card.Text>
+              <h2 style={{ color: '#FFFF' }}> $1,500MXN*/<small>mes</small> </h2>
+              <p style={{ color: '#FFFF' }}>* Monitoreo de servidor y base de datos</p>
+              <p style={{ color: '#FFFF' }}>* Respaldos automáticos semanales de
+                información.</p>
+              <p style={{ color: '#FFFF' }}>* Ajustes menores mensuales
+                (cambios de precios, textos o catálogos).</p>
+              <p style={{ color: '#FFFF' }}>* Soporte técnico directo vía WhatsApp
+                para el equipo.</p>
+            </Card.Text>
+
+            <button style={{ borderRadius: '16px' }}>Contratar Mantenimiento</button>
+
+          </Card.Body>
+          <Card.Footer>
+            <small style={{ color: '#FFFF' }}>*Este plan solo es efectivo si se trata de un
+              sistema creado por nosotros. </small>
+          </Card.Footer>
+        </Card>
+
+        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
+          <Card.Body>
+            <Card.Title> <h5 style={{ color: '#FFF' }}>Mantenimiento Avanzado</h5> </Card.Title>
+            <Card.Text>
+              <h2 style={{ color: '#FFF', fontWeight: '700px' }}> $2,500MXN*/<small>mes</small> </h2>
+              <p style={{ color: '#FFF' }}>* Todo lo del Mantenimiento Base.</p>
+              <p style={{ color: '#FFF' }}>* Desarrollo de 1 o 2 funciones nuevas o
+                reportes extra cada mes.</p>
+              <p style={{ color: '#FFF' }}>* Optimización continua de consultas y
+                rendimiento.</p>
+              <p style={{ color: '#FFF' }}>* Respaldos diarios en la nube e informes sobre los mismos.</p>
+
+            </Card.Text>
+            <button style={{ borderRadius: '16px' }}>¡Escalar mi sistema AHORA!</button>
+          </Card.Body>
+          <Card.Footer>
+            <small style={{ color: '#FFF' }}>*Este plan solo es efectivo si se trata de un
+              sistema creado por nosotros. </small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
+
+    </>
+  )
+}
+
 function App() {
 
   return (
@@ -139,11 +174,11 @@ function App() {
         <main>
 
           <section id="hero">
-            <Carrousel />
+
           </section>
 
-          <section id="Us">
-            
+          <section id="cards">
+            <Cards />
           </section>
 
           <section id="">
