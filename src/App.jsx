@@ -1,52 +1,51 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import {Row, Col, Button} from 'react-bootstrap'
 library.add(fas, far, fab)
 import './App.css'
 
-function Carrousel() {
+function HeroSection() {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="w-100"
-          src="public/images/fogata.png"
-        />
-        <Carousel.Caption>
-          <h5>Promocion Especial de Septiembre</h5>
-          <p>1500.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="w-100"
-          src="public/images/LOGO.jpg"
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="public/images/DS2_1_.jpg"
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <section className="py-5 bg-light border-bottom" style={{ background: 'linear-gradient(90deg, #2D1045, #0A0510)', width: 'auto', height: '750px' }}>
+      <Container className="my-5">
+        <Row className="align-items-center">
+          <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
+            <span className="badge bg-primary mb-3"> <FontAwesomeIcon icon="fa-brands fa-Rocket" /> Sube de nivel a tu negocio con nosotros</span>
+            <h1 className="display-4 fw-bold mb-3" style={{ color: '#fff' }}>
+              Sistemas hechos a tus necesidades
+            </h1>
+            <p className="lead mb-4" style={{ color: '#fff' }}>
+              Desarrollamos herramientas internas, cotizadores 
+              automáticos y catálogos digitales adaptados a la operación 
+              real de tu empresa. Sin rentas mensuales en dólares ni 
+              programas genéricos:software propio y a tu medida.
+            </p>
+            <div className="d-gap gap-3 d-sm-flex justify-content-center justify-content-lg-start">
+              <Button variant="primary" size="lg" className="me-sm-2 mb-2 mb-sm-0" style={{ color: '#fff' }}>
+                Contactanos Ahora
+              </Button>
+              <Button variant="outline-secondary" size="lg" style={{ color: '#fff' }}>
+                Ver Planes y Precios
+              </Button>
+            </div>
+          </Col>
+
+          <Col lg={6} className="text-center">
+            <div className="p-4 bg-white shadow-sm rounded border">
+              <div className="bg-dark text-white p-5 rounded font-monospace text-start small">
+                <img src="" />
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 }
 
@@ -139,7 +138,7 @@ function App() {
         <main>
 
           <section id="hero">
-            <Carrousel />
+            <HeroSection />
           </section>
 
           <section id="Us">
