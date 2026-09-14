@@ -1,11 +1,10 @@
+html,
+body,
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-body {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
   background-color: #FFFF;
 }
 
@@ -55,6 +54,11 @@ footer {
   color: #FFFF;
 }
 
-.word_copyright{
+.word_copyright {
   color: #FFFF;
+}
+
+.fullscreen {
+  height: 100vh;
+  width: 100vw;
 }
