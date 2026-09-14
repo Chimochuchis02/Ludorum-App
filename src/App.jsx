@@ -254,7 +254,7 @@ function FormClient() {
             <Row className="align-items-center">
               <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
                 <span className="badge bg-primary mb-3">
-                  🚀 Llámanos ahora y comencemos con soluciones
+                  Llámanos ahora y comencemos con soluciones
                 </span>
                 <h2 className="display-4 fw-bold mb-3" style={{ color: '#fff' }}>
                   ¡Manda tu mensaje AHORA!
@@ -305,7 +305,7 @@ function FormClient() {
                       <Form.Select
                         value={formData.selected_plan}
                         onChange={handleChange}
-                        name="selected_plan" 
+                        name="selected_plan"
                         id="wa-plan"
                         style={{ color: '#000' }}
                       >
@@ -331,7 +331,7 @@ function FormClient() {
                     </Form.Group>
 
                     <Button variant="outline-primary" onClick={sendToWhatsapp} type="button" className="w-100">
-                      Enviar Mensaje <FontAwesomeIcon icon="fa-brands fa-whatsapp" style={{color: " rgb(99, 230, 190)"}}/>
+                      Enviar Mensaje <FontAwesomeIcon icon="fa-brands fa-whatsapp" style={{ color: " rgb(99, 230, 190)" }} />
                     </Button>
                   </Form>
                 </div>
