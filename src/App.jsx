@@ -206,63 +206,65 @@ function Cards() {
 function FormClient() {
   return (
     <>
-      <section className="py-5 bg-light border-bottom" style={{ background: 'linear-gradient(90deg, #2D1045, #0A0510)', width: 'auto', height: '750px' }}>
-        <Container className="my-5">
-          <Row className="align-items-center">
-            <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
-              <span className="badge bg-primary mb-3"> <FontAwesomeIcon icon="fa-brands fa-Rocket" /> Llamanos ahora y comencemos con soluciones</span>
-              <h2 className="display-4 fw-bold mb-3" style={{ color: '#fff' }}>
-                ¡Manda tu mensaje AHORA!
-              </h2>
-              <p className="lead mb-4" style={{ color: '#fff' }}>
-                Cuéntanos qué herramienta necesitas o qué proceso quieres resolver.
-                Te responderemos directo a WhatsApp con un diagnóstico y
-                propuesta clara.
-              </p>
+      <div class='fullscreen'>
+        <section className="py-5 bg-light border-bottom" style={{ background: 'linear-gradient(90deg, #2D1045, #0A0510)' }}>
+          <Container className="my-5">
+            <Row className="align-items-center">
+              <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
+                <span className="badge bg-primary mb-3"> <FontAwesomeIcon icon="fa-brands fa-Rocket" /> Llamanos ahora y comencemos con soluciones</span>
+                <h2 className="display-4 fw-bold mb-3" style={{ color: '#fff' }}>
+                  ¡Manda tu mensaje AHORA!
+                </h2>
+                <p className="lead mb-4" style={{ color: '#fff' }}>
+                  Cuéntanos qué herramienta necesitas o qué proceso quieres resolver.
+                  Te responderemos directo a WhatsApp con un diagnóstico y
+                  propuesta clara.
+                </p>
 
-              <p className="lead mb-4" style={{ color: '#fff' }}>
-                Ademas, contamos con contacto y reuniones virtuales/presenciales
-                para discutir sobre los mismos problemas y posibles soluciones a un
-                mismo problema, para poder ayudarte a subir de nivel a tu negocio
-                con un sistema hecho a tu medida y resolviendo tus necesidades.</p>
-            </Col>
+                <p className="lead mb-4" style={{ color: '#fff' }}>
+                  Ademas, contamos con contacto y reuniones virtuales/presenciales
+                  para discutir sobre los mismos problemas y posibles soluciones a un
+                  mismo problema, para poder ayudarte a subir de nivel a tu negocio
+                  con un sistema hecho a tu medida y resolviendo tus necesidades.</p>
+              </Col>
 
-            <Col lg={6} className="text-center" >
-              <div className="p-4 shadow-sm rounded border" style={{backgroundColor: 'linear-gradient(90deg, #2D1045, #0A0510)' }}>
-                <Form>
-                  <Form.Group className="mb-3">
-                    <Form.Label>Nombre de tu Empresa/Negocio</Form.Label>
-                    <Form.Control type="text" className="text-muted" placeholder="Ej. Rocket Papas" id='wa-business' />
-                  </Form.Group>
+              <Col lg={6} className="text-center" >
+                <div className="p-4 shadow-sm rounded border" style={{ backgroundColor: 'linear-gradient(90deg, #2D1045, #0A0510)' }}>
+                  <Form>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Nombre de tu Empresa/Negocio</Form.Label>
+                      <Form.Control type="text" className="text-muted" placeholder="Ej. Rocket Papas" id='wa-business' />
+                    </Form.Group>
 
-                  <Form.Group className="mb-3">
-                    <Form.Label>Descripcion de tus productos</Form.Label>
-                    <Form.Control type="text" className="text-muted" placeholder="Ej. muebles/ventanales" id='wa-products' />
-                  </Form.Group>
-                  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Label> ¿Que servicio requieren? </Form.Label>
-                    <Form.Select aria-label="Default select example" id="wa-plan">
-                      <option className="text-muted"> Seleccione su opción </option>
-                      <option value="1">Sistema unico</option>
-                      <option value="2">Mantenimiento base</option>
-                      <option value="3">Mantenimiento avanzado</option>
-                    </Form.Select>
-                  </Form.Group>
-                  <Form.Group className="mb-3">
-                    <Form.Label> Descripcion del problema/dudas que tenga </Form.Label>
-                    <Form.Control placeholder="Ej. Necesitamos un cotizador automatico como sistema, ya que hacemos todo a mano y poder quitarnos tiempo en eso."
-                      className="text-muted" as="textarea" rows={3} id="wa-description">
-                    </Form.Control>
-                  </Form.Group >
-                  <Button variant="primary" type='button'> 
-                    Enviar Mensaje <FontAwesomeIcon icon="fa-brands fa-whatsapp" style={{ color: '#25d366' }} />
-                  </Button>
-                </Form>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+                    <Form.Group className="mb-3">
+                      <Form.Label>Descripcion de tus productos</Form.Label>
+                      <Form.Control type="text" className="text-muted" placeholder="Ej. muebles/ventanales" id='wa-products' />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                      <Form.Label> ¿Que servicio requieren? </Form.Label>
+                      <Form.Select aria-label="Default select example" id="wa-plan">
+                        <option className="text-muted"> Seleccione su opción </option>
+                        <option value="1">Sistema unico</option>
+                        <option value="2">Mantenimiento base</option>
+                        <option value="3">Mantenimiento avanzado</option>
+                      </Form.Select>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                      <Form.Label> Descripcion del problema/dudas que tenga </Form.Label>
+                      <Form.Control placeholder="Ej. Necesitamos un cotizador automatico como sistema, ya que hacemos todo a mano y poder quitarnos tiempo en eso."
+                        className="text-muted" as="textarea" rows={3} id="wa-description">
+                      </Form.Control>
+                    </Form.Group >
+                    <Button variant="primary" type='button'>
+                      Enviar Mensaje <FontAwesomeIcon icon="fa-brands fa-whatsapp" style={{ color: '#25d366' }} />
+                    </Button>
+                  </Form>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+      </div>
     </>
   );
 }
