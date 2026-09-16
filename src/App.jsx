@@ -8,6 +8,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { Row, Col, Button } from 'react-bootstrap'
+import Form from 'react-bootstrap/Form'
+import React, { useState } from 'react';
 library.add(fas, far, fab)
 import './App.css'
 import Particles from './Particles.jsx'
