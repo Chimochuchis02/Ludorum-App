@@ -10,9 +10,12 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { Row, Col, Button } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 library.add(fas, far, fab)
 import './App.css'
 import Particles from './Particles.jsx'
+import Politics from './politics.jsx'
 
 function HeroSection() {
   return (
@@ -83,7 +86,7 @@ function NavBar() {
               <Nav.Link href="#pricing" id="pyp" class="nav_words">Planes y Precios </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#politics" id="politica" class="nav_words">Politicas de seguridad</Nav.Link>
+              <Nav.Link as={Link} to="/politics" id="politica" class="nav_words">Politicas de seguridad</Nav.Link>
               <Nav.Link href="#contact" id="contacto" class="nav_word">Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -150,7 +153,7 @@ function Footer() {
 function Cards() {
   return (
     <>
-      <CardGroup style={{ padding: '75px' }} className='gap-5'>
+      <CardGroup style={{ padding: '75px' }} className='gap-5' id="#pricing">
         <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
           <Card.Body>
             <Card.Title> <h5 style={{ color: '#FFFF' }}>Sistema Unico</h5> </Card.Title>
@@ -365,28 +368,18 @@ function App() {
   return (
     <>
       <NavBar />
-      <div>
 
-        <main>
-
-          <section id="hero">
+      <Routes>
+        <Route path="/" element={
+          <>
             <HeroSection />
-          </section>
-
-          <section id="cards">
             <Cards />
-          </section>
-
-          <section id="Form_client">
             <FormClient />
-          </section>
+          </>
+        } />
 
-          <section >
-
-          </section>
-
-        </main>
-      </div>
+        <Route path="/politics" element={<Politics />} />
+      </Routes>
 
       <Footer />
     </>
