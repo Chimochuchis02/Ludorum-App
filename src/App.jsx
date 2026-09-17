@@ -7,9 +7,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import {Row, Col, Button} from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
+import { Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 library.add(fas, far, fab)
 import './App.css'
+import Politics from './politics.jsx'
 
 function HeroSection() {
   return (
@@ -22,9 +25,9 @@ function HeroSection() {
               Sistemas hechos a tus necesidades
             </h1>
             <p className="lead mb-4" style={{ color: '#fff' }}>
-              Desarrollamos herramientas internas, cotizadores 
-              automáticos y catálogos digitales adaptados a la operación 
-              real de tu empresa. Sin rentas mensuales en dólares ni 
+              Desarrollamos herramientas internas, cotizadores
+              automáticos y catálogos digitales adaptados a la operación
+              real de tu empresa. Sin rentas mensuales en dólares ni
               programas genéricos:software propio y a tu medida.
             </p>
             <div className="d-gap gap-3 d-sm-flex justify-content-center justify-content-lg-start">
@@ -64,7 +67,7 @@ function NavBar() {
               <Nav.Link href="#pricing" id="pyp" class="nav_words">Planes y Precios </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#politics" id="politica" class="nav_words">Politicas de seguridad</Nav.Link>
+              <Nav.Link as={Link} to="/politics" id="politica" class="nav_words">Politicas de seguridad</Nav.Link>
               <Nav.Link href="#contact" id="contacto" class="nav_word">Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -131,7 +134,7 @@ function Footer() {
 function Cards() {
   return (
     <>
-      <CardGroup style={{ padding: '75px' }} className='gap-5'>
+      <CardGroup style={{ padding: '75px' }} className='gap-5' id="#pricing">
         <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
           <Card.Body>
             <Card.Title> <h5 style={{ color: '#FFFF' }}>Sistema Unico</h5> </Card.Title>
@@ -206,7 +209,19 @@ function App() {
   return (
     <>
       <NavBar />
-      <div>
+
+      <Routes>
+        <Route path="/" element={
+          <>
+            <HeroSection />
+            <Cards />
+          </>
+        } />
+
+        <Route path="/politics" element={<Politics />} />
+      </Routes>
+
+      {/* <div>
         <main>
 
           <section id="hero">
@@ -226,7 +241,7 @@ function App() {
           </section>
 
         </main>
-      </div>
+      </div> */}
 
       <Footer />
     </>
