@@ -7,7 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import {Row, Col, Button} from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
 library.add(fas, far, fab)
 import './App.css'
 
@@ -22,9 +22,9 @@ function HeroSection() {
               Sistemas hechos a tus necesidades
             </h1>
             <p className="lead mb-4" style={{ color: '#fff' }}>
-              Desarrollamos herramientas internas, cotizadores 
-              automáticos y catálogos digitales adaptados a la operación 
-              real de tu empresa. Sin rentas mensuales en dólares ni 
+              Desarrollamos herramientas internas, cotizadores
+              automáticos y catálogos digitales adaptados a la operación
+              real de tu empresa. Sin rentas mensuales en dólares ni
               programas genéricos:software propio y a tu medida.
             </p>
             <div className="d-gap gap-3 d-sm-flex justify-content-center justify-content-lg-start">
@@ -104,18 +104,22 @@ function Footer() {
 
             <div className="col-md-3 mb-md-0 mb-3 py-2">
               <h5 className="text-uppercase" class="word_title">Redes y Contacto</h5>
-              <ul className="list-unstyled">
-                <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-whatsapp" /></a></li>
-                <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a></li>
-                <li><a href="wa:8711324475" class="word"> <FontAwesomeIcon icon="fa-solid fa-dog" /> </a></li>
-                <li><a href="#" class="word"> <FontAwesomeIcon icon="fa-brands fa-instagram" /> </a> </li>
-                <li><a href="#" class="word">contactoludorum@gmail.com</a></li>
-              </ul>
+              <div className="d-flex gap-3 justify-content-center mt-3">
+                <a href="https://wa.me/5218713503367"
+                  class="social-icon-footer wa-hover text-white bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                  style={{ width: '45px', height: '45px', color: '#25D366' }}><FontAwesomeIcon icon="fa-brands fa-whatsapp" /></a>
+                <a href="https://wa.me/5218713503367"
+                  class="social-icon-footer envelope-hover text-white bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                  style={{ width: '45px', height: '45px', color: '#25D366' }}> <FontAwesomeIcon icon="fa-regular fa-envelope" /> </a>
+                <a href="https://wa.me/5218713503367"
+                  class="social-icon-footer phone-hover text-white bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                  style={{ width: '45px', height: '45px', color: '#0abbe700' }}> <FontAwesomeIcon icon="fa-solid fa-phone" /> </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="footer-copyright text-center py-5" class="word_copyright">
+        <div className="d-flex gap-3 justify-content-center" class="word_copyright">
           <ul>
             © 2026 All Copyrights Are Reserved: Ludorum && Code.
           </ul>
