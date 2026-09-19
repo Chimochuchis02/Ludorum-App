@@ -129,13 +129,13 @@ function Footer() {
             <div className="col-md-3 mb-md-0 mb-3 py-2">
               <h5 className="text-uppercase" class="word_title">Redes y Contacto</h5>
               <div className="d-flex gap-3 justify-content-center mt-3">
-                <a href="https://wa.me/5218713503367"
+                <a href="https://wa.me/528711324475"
                   class="social-icon-footer wa-hover text-white bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                   style={{ width: '45px', height: '45px', color: '#25D366' }}><FontAwesomeIcon icon="fa-brands fa-whatsapp" /></a>
-                <a href="https://wa.me/5218713503367"
+                <a href="mailto:angeldominguezlopez030206@gmail.com"
                   class="social-icon-footer envelope-hover text-white bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                   style={{ width: '45px', height: '45px', color: '#25D366' }}> <FontAwesomeIcon icon="fa-regular fa-envelope" /> </a>
-                <a href="https://wa.me/5218713503367"
+                <a href="tel:52871324475"
                   class="social-icon-footer phone-hover text-white bg-white bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                   style={{ width: '45px', height: '45px', color: '#0abbe700' }}> <FontAwesomeIcon icon="fa-solid fa-phone" /> </a>
               </div>
