@@ -16,6 +16,8 @@ library.add(fas, far, fab)
 import './App.css'
 import Particles from './Particles.jsx'
 import Politics from './politics.jsx'
+import image_Rocket from './assets/rocket_papas.jpeg'
+import image_Easy from './assets/easy_peasy_english.jpeg'
 
 function HeroSection() {
   return (
@@ -368,6 +370,67 @@ function FormClient() {
   );
 }
 
+function Cards_Clients() {
+  return (
+    <>
+      <CardGroup style={{ padding: '75px' }} className='gap-5' id="#pricing">
+        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
+          <Card.Body>
+            <Card.Title> <h5 style={{ color: '#FFFF', textAlign: 'center' }}>Educacion & Servicios</h5> </Card.Title>
+            <Card.Text>
+              <h2 style={{ color: '#FFFF', textAlign: 'center' }}>Easy Peasy English </h2>
+              <img src={image_Easy} style={{ width: '100%', height: '60%' }} />
+              <p style={{color: '#FFFF'}}>Plataforma web accesible e interactiva para la 
+                captacion de alumnos y oferta de cursos </p>
+            </Card.Text>
+            <button style={{ borderRadius: '16px' }}>Ver página Web</button>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
+          <Card.Body>
+            <Card.Title> <h5 style={{ color: '#FFFF', textAlign: 'center' }}>Gastronomía & Retail</h5> </Card.Title>
+            <Card.Text>
+              <h2 style={{ color: '#FFFF', textAlign: 'center' }}> Rocket Papas </h2>
+              <img src={image_Rocket} style={{ width: '100%', height: '60%' }} />
+              <p style={{ color: '#FFFF' }}>Se implemento una pagina web para promocionar la franquicia y 
+                una seccion administrativa.</p>
+            </Card.Text>
+
+            <button style={{ borderRadius: '16px' }}>Ver página Web</button>
+
+          </Card.Body>
+          <Card.Footer>
+            <small style={{ color: '#FFFF' }}>*Esta pagina sigue en desarrollo. </small>
+          </Card.Footer>
+        </Card>
+
+        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
+          <Card.Body>
+            <Card.Title> <h5 style={{ color: '#FFF' }}>Mantenimiento Avanzado</h5> </Card.Title>
+            <Card.Text>
+              <h2 style={{ color: '#FFF', fontWeight: '700px' }}> $2,500MXN*/<small>mes</small> </h2>
+              <p style={{ color: '#FFF' }}>* Todo lo del Mantenimiento Base.</p>
+              <p style={{ color: '#FFF' }}>* Desarrollo de 1 o 2 funciones nuevas o
+                reportes extra cada mes.</p>
+              <p style={{ color: '#FFF' }}>* Optimización continua de consultas y
+                rendimiento.</p>
+              <p style={{ color: '#FFF' }}>* Respaldos diarios en la nube e informes sobre los mismos.</p>
+
+            </Card.Text>
+            <button style={{ borderRadius: '16px' }}>¡Escalar mi sistema AHORA!</button>
+          </Card.Body>
+          <Card.Footer>
+            <small style={{ color: '#FFF' }}>*Este plan solo es efectivo si se trata de un
+              sistema creado por nosotros. </small>
+          </Card.Footer>
+        </Card>
+      </CardGroup>
+
+    </>
+  );
+}
+
 function App() {
   return (
     <>
@@ -379,6 +442,7 @@ function App() {
             <HeroSection />
             <Cards />
             <FormClient />
+            <Cards_Clients />
           </>
         } />
 
