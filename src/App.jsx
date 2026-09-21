@@ -9,7 +9,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { Row, Col, Button } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 library.add(fas, far, fab)
@@ -17,7 +17,7 @@ import './App.css'
 import Particles from './Particles.jsx'
 import Politics from './politics.jsx'
 import ProfileCard from './Cardstylized.jsx'
-import myImage from './assets/my_image.png';
+import myImage from './assets/my_image.png'
 import image_Rocket from './assets/rocket_papas.jpeg'
 import image_Easy from './assets/easy_peasy_english.jpeg'
 
