@@ -408,24 +408,25 @@ function Cards_Clients() {
                   <p style={{ color: '#FFF', fontSize: '1rem', lineHeight: '1.6', marginBottom: '25px', opacity: 0.9 }}>
                     Plataforma web accesible e interactiva para la captación de alumnos y oferta de cursos.
                   </p>
-
-                  <button
-                    className="btn btn-client"
-                    style={{
-                      backgroundColor: '#0a0a0a', color: '#FFF', border: 'none', borderRadius: '16px', padding: '14px 32px',
-                      fontWeight: '600', fontSize: '0.95rem', width: '100%', cursor: 'pointer', transition: 'all 0.3s ease'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.target.style.backgroundColor = '#1a1a1a';
-                      e.target.style.transform = 'translateY(-2px)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.target.style.backgroundColor = '#0a0a0a';
-                      e.target.style.transform = 'translateY(0)';
-                    }}
-                  >
-                    Ver página Web
-                  </button>
+                  <a href="https://easy-peasy-english-web-2ulj.vercel.app">
+                    <button
+                      className="btn btn-client"
+                      style={{
+                        backgroundColor: '#0a0a0a', color: '#FFF', border: 'none', borderRadius: '16px', padding: '14px 32px',
+                        fontWeight: '600', fontSize: '0.95rem', width: '100%', cursor: 'pointer', transition: 'all 0.3s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = '#1a1a1a';
+                        e.target.style.transform = 'translateY(-2px)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = '#0a0a0a';
+                        e.target.style.transform = 'translateY(0)';
+                      }}
+                    >
+                      Ver página Web
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -489,7 +490,7 @@ function Cards_Clients() {
 
           </div>
         </div>
-      </div>
+      </div >
 
     </>
   );
@@ -505,7 +506,7 @@ function App() {
       }}>
         <NavBar />
 
-        <main style={{flex: 1}}>
+        <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={
               <>
