@@ -101,7 +101,7 @@ function NavBar() {
 function Footer() {
   return (
     <>
-      <footer className="page-footer font-small white pt-4 fixed-bottom" style={{ backgroundColor: '#350067' }}>
+      <footer className="page-footer font-small white pt-4 sticky-bottom" style={{ backgroundColor: '#350067' }}>
         <div className="container-fluid text-center text-md-left">
           <div className="row">
             <div className="col-md-6 mt-md-0 mt-3 py-5">
@@ -373,59 +373,123 @@ function FormClient() {
 function Cards_Clients() {
   return (
     <>
-      <CardGroup style={{ padding: '75px' }} className='gap-5' id="#pricing">
-        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
-          <Card.Body>
-            <Card.Title> <h5 style={{ color: '#FFFF', textAlign: 'center' }}>Educacion & Servicios</h5> </Card.Title>
-            <Card.Text>
-              <h2 style={{ color: '#FFFF', textAlign: 'center' }}>Easy Peasy English </h2>
-              <img src={image_Easy} style={{ width: '100%', height: '60%' }} />
-              <p style={{color: '#FFFF'}}>Plataforma web accesible e interactiva para la 
-                captacion de alumnos y oferta de cursos </p>
-            </Card.Text>
-            <button style={{ borderRadius: '16px' }}>Ver página Web</button>
-          </Card.Body>
-        </Card>
+      <div className="py-5">
+        <div className="container">
+          <div className="row g-4">
 
-        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
-          <Card.Body>
-            <Card.Title> <h5 style={{ color: '#FFFF', textAlign: 'center' }}>Gastronomía & Retail</h5> </Card.Title>
-            <Card.Text>
-              <h2 style={{ color: '#FFFF', textAlign: 'center' }}> Rocket Papas </h2>
-              <img src={image_Rocket} style={{ width: '100%', height: '60%' }} />
-              <p style={{ color: '#FFFF' }}>Se implemento una pagina web para promocionar la franquicia y 
-                una seccion administrativa.</p>
-            </Card.Text>
+            <div className="col-lg-6 col-md-6">
+              <div
+                className="client-card h-100"
+                style={{ backgroundColor: '#650AFF', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 24px rgba(101, 10, 255, 0.3)' }}>
 
-            <button style={{ borderRadius: '16px' }}>Ver página Web</button>
+                <div className="text-center pt-4 pb-2">
+                  <h5 style={{ color: '#FFF', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', margin: 0 }}>
+                    Educación & Servicios
+                  </h5>
+                </div>
 
-          </Card.Body>
-          <Card.Footer>
-            <small style={{ color: '#FFFF' }}>*Esta pagina sigue en desarrollo. </small>
-          </Card.Footer>
-        </Card>
+                <div className="text-center px-4">
+                  <div style={{
+                    height: '220px', backgroundColor: '#FFF', borderRadius: '16px', padding: '20px', marginBottom: '25px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center'
+                  }}>
+                    <img
+                      src={image_Easy}
+                      style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+                    />
+                  </div>
+                </div>
 
-        <Card style={{ backgroundColor: '#650AFF', borderRadius: '20px' }}>
-          <Card.Body>
-            <Card.Title> <h5 style={{ color: '#FFF' }}>Mantenimiento Avanzado</h5> </Card.Title>
-            <Card.Text>
-              <h2 style={{ color: '#FFF', fontWeight: '700px' }}> $2,500MXN*/<small>mes</small> </h2>
-              <p style={{ color: '#FFF' }}>* Todo lo del Mantenimiento Base.</p>
-              <p style={{ color: '#FFF' }}>* Desarrollo de 1 o 2 funciones nuevas o
-                reportes extra cada mes.</p>
-              <p style={{ color: '#FFF' }}>* Optimización continua de consultas y
-                rendimiento.</p>
-              <p style={{ color: '#FFF' }}>* Respaldos diarios en la nube e informes sobre los mismos.</p>
+                <div className="text-center px-4 pb-4">
+                  <h2 style={{ color: '#FFF', fontSize: '1.8rem', fontWeight: '700', marginBottom: '15px' }}>
+                    Easy Peasy English
+                  </h2>
 
-            </Card.Text>
-            <button style={{ borderRadius: '16px' }}>¡Escalar mi sistema AHORA!</button>
-          </Card.Body>
-          <Card.Footer>
-            <small style={{ color: '#FFF' }}>*Este plan solo es efectivo si se trata de un
-              sistema creado por nosotros. </small>
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+                  <p style={{ color: '#FFF', fontSize: '1rem', lineHeight: '1.6', marginBottom: '25px', opacity: 0.9 }}>
+                    Plataforma web accesible e interactiva para la captación de alumnos y oferta de cursos.
+                  </p>
+
+                  <button
+                    className="btn btn-client"
+                    style={{
+                      backgroundColor: '#0a0a0a', color: '#FFF', border: 'none', borderRadius: '16px', padding: '14px 32px',
+                      fontWeight: '600', fontSize: '0.95rem', width: '100%', cursor: 'pointer', transition: 'all 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = '#1a1a1a';
+                      e.target.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = '#0a0a0a';
+                      e.target.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    Ver página Web
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-md-6">
+              <div
+                className="client-card h-100"
+                style={{ backgroundColor: '#650AFF', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 24px rgba(101, 10, 255, 0.3)' }}>
+                <div className="text-center pt-4 pb-2">
+                  <h5 style={{ color: '#FFF', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', margin: 0 }}>
+                    Gastronomía & Retail
+                  </h5>
+                </div>
+
+                <div className="text-center px-4">
+                  <div style={{
+                    height: '220px', backgroundColor: '#FFF', borderRadius: '16px', padding: '20px', marginBottom: '25px', display: 'flex',
+                    alignItems: 'center', justifyContent: 'center'
+                  }}>
+                    <img
+                      src={image_Rocket}
+                      style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+                  </div>
+                </div>
+
+                <div className="text-center px-4 pb-4">
+                  <h2 style={{ color: '#FFF', fontSize: '1.8rem', fontWeight: '700', marginBottom: '15px' }}>
+                    Rocket Papas
+                  </h2>
+
+                  <p style={{ color: '#FFF', fontSize: '1rem', lineHeight: '1.6', marginBottom: '25px', opacity: 0.9 }}>
+                    Se implementó una página web para promocionar la franquicia y una sección administrativa.
+                  </p>
+
+                  <button
+                    className="btn btn-client"
+                    style={{
+                      backgroundColor: '#0a0a0a', color: '#FFF', border: 'none', borderRadius: '16px', padding: '14px 32px', fontWeight: '600',
+                      fontSize: '0.95rem', width: '100%', cursor: 'pointer', transition: 'all 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = '#1a1a1a';
+                      e.target.style.transform = 'translateY(-2px)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = '#0a0a0a';
+                      e.target.style.transform = 'translateY(0)';
+                    }}
+                  >
+                    Ver página Web
+                  </button>
+
+                  <div className="mt-3">
+                    <small style={{ color: '#FFF', opacity: 0.7 }}>
+                      *Página en desarrollo
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
     </>
   );
@@ -434,22 +498,30 @@ function Cards_Clients() {
 function App() {
   return (
     <>
-      <NavBar />
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+      }}>
+        <NavBar />
 
-      <Routes>
-        <Route path="/" element={
-          <>
-            <HeroSection />
-            <Cards />
-            <FormClient />
-            <Cards_Clients />
-          </>
-        } />
+        <main style={{flex: 1}}>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <HeroSection />
+                <Cards />
+                <FormClient />
+                <Cards_Clients />
+              </>
+            } />
 
-        <Route path="/politics" element={<Politics />} />
-      </Routes>
+            <Route path="/politics" element={<Politics />} />
+          </Routes>
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }
