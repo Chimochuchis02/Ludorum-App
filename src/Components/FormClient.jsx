@@ -7,6 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { Row, Col, Button } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import { useState } from 'react';
+
 library.add(fas, far, fab)
 
 export default function FormClient() {
@@ -51,7 +52,7 @@ export default function FormClient() {
 
         window.open(url, '_blank');
     }
-
+    
     return (
         <>
             <div className="fullscreen">
