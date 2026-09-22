@@ -1,6 +1,4 @@
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +8,6 @@ import { Row, Col, Button } from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 library.add(fas, far, fab)
 import './App.css'
 import Politics from './politics.jsx'
@@ -19,30 +16,7 @@ import HeroSection from './Components/HeroSection.jsx'
 import Cards from './Components/Cards.jsx'
 import Card_Us from './Components/Card/CardUs.jsx'
 import Cards_Clients from './Components/Clients/CardsClients.jsx'
-
-function NavBar() {
-  return (
-    <>
-      <Navbar collapseOnSelect expand="lg" fixed="top" style={{ backgroundColor: '#7B2CBF' }} >
-        <Container>
-          <Navbar.Brand href="#hero" id="nav_title">LUDORUM && CODE</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#Us" id="nosotros" class="nav_words">Nosotros</Nav.Link>
-              <Nav.Link href="#clients" id="clientes" class="nav_words">Clientes</Nav.Link>
-              <Nav.Link href="#pricing" id="pyp" class="nav_words">Planes y Precios </Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link as={Link} to="/politics" id="politica" class="nav_words">Politicas de seguridad</Nav.Link>
-              <Nav.Link href="#contact" id="contacto" class="nav_word">Contacto</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </>
-  );
-}
+import NavBar from './layout/NavBar.jsx'
 
 function FormClient() {
   const [formData, setFormData] = useState({
