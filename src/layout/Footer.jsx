@@ -9,7 +9,7 @@ import Logo from './Ludorum_Logo.svg'
 export default function Footer() {
   return (
     <>
-      <footer className="page-footer font-small white pt-0 sticky-bottom" style={{ backgroundColor: "#350067", color: "#ffffff" }}>
+      <footer className=" white pt-0 footer" style={{ backgroundColor: "#350067", color: "#ffffff", marginTop: "auto"}}>
         <div class="container">
           <div class="row align-items-center text-center text-md-start">
             <div class="col-md-4 mb-4 mb-md-0">
@@ -20,7 +20,7 @@ export default function Footer() {
 
             <div class="col-md-4 text-center mb-0 md-0">
               <img src={Logo}
-                style={{ width: "90px" }} />
+                style={{ width: "90px", height: "120px", objectFit: "contain", backgroundColor: "transparent" }} />
               <h4 class="fw-bold">Ludorum && Code</h4>
             </div>
 

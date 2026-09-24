@@ -18,7 +18,10 @@ html {
 
 footer {
   display: flex;
-  flex: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
   text-align: center;
   width: auto;
   position: fixed;
