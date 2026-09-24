@@ -47,8 +47,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#politics" class="word">
-                    Politicas de seguridad
+                  <a href="#form" class="word">
+                    Contacto
                   </a>
                 </li>
               </ul>
