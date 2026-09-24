@@ -24,10 +24,10 @@ function App() {
             <Route path="/" element={
               <>
                 <HeroSection />
-                <Cards />
-                <FormClient />
-                <Card_Us />
                 <Cards_Clients />
+                <FormClient />
+                <Cards />
+                <Card_Us />
               </>
             } />
 

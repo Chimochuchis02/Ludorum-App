@@ -4,9 +4,9 @@ import image_Easy from './easy_peasy_english.jpeg'
 export default function Cards_Clients() {
     return (
         <>
-            <div className="py-5">
+            <div className="py-3">
                 <div className="container">
-                    <div className="row g-4">
+                    <div className="row g-5">
 
                         <div className="col-lg-6 col-md-6">
                             <div
