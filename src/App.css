@@ -146,3 +146,67 @@ footer {
 .wa-hover:hover {
   color: #25D366 !important;
 }
+
+@media (max-width: 767px) {
+
+  /* Aquí van todos los ajustes para móvil */
+  .pricing-card-container,
+  .row.g-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card {
+    margin-bottom: 20px !important;
+  }
+
+  h1,
+  .h1 {
+    font-size: 2rem !important;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .page-footer {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .page-footer .col-12 {
+    margin-bottom: 15px !important;
+  }
+
+  .page-footer img {
+    width: 1px !important;
+    height: 1px !important;
+    visibility: hidden;
+  }
+
+  .page-footer h4,
+  .page-footer h5 {
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .page-footer p {
+    font-size: 0.85rem !important;
+    margin-bottom: 5px !important;
+  }
+
+  .page-footer .border-top {
+    margin-top: 15px !important;
+    padding-top: 10px !important;
+  }
+
+  .page-footer small {
+    font-size: 0.7rem !important;
+  }
+
+  .page-footer .social-icon-footer {
+    width: 38px !important;
+    height: 38px !important;
+  }
+}

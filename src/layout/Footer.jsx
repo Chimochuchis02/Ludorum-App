@@ -9,7 +9,7 @@ import Logo from './Ludorum_Logo.svg'
 export default function Footer() {
   return (
     <>
-      <footer className=" white pt-0 footer" style={{ backgroundColor: "#350067", color: "#ffffff", marginTop: "auto"}}>
+      <footer className="page-footer white pt-0 footer" style={{ backgroundColor: "#350067", color: "#ffffff", marginTop: "auto"}}>
         <div class="container">
           <div class="row align-items-center text-center text-md-start">
             <div class="col-md-4 mb-4 mb-md-0">
