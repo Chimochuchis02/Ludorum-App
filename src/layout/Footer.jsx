@@ -4,22 +4,23 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, far, fab)
+import Logo from './Ludorum_Logo.svg'
 
 export default function Footer() {
   return (
     <>
-      <footer className="page-footer font-small white pt-4 sticky-bottom" style={{ backgroundColor: "#350067", color: "#ffffff" }}>
+      <footer className="page-footer font-small white pt-0 sticky-bottom" style={{ backgroundColor: "#350067", color: "#ffffff" }}>
         <div class="container">
           <div class="row align-items-center text-center text-md-start">
             <div class="col-md-4 mb-4 mb-md-0">
-              <p class="h5 mb-3"> Ludorum && Code</p>
+              <p class="h5 mb-3 fw-bold"> Ludorum && Code</p>
               <p class="h5"> Te ayudamos a resolver problemas, mediante soluciones tecnologicas, para llevar tu negocio al siguiente nivel</p>
             </div>
 
 
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-              <img src="assets/32_32_Logo_Ludorum.png" class="rounded-circle shadow mb-2"
-                style={{ width: "120px" }} />
+            <div class="col-md-4 text-center mb-0 md-0">
+              <img src={Logo}
+                style={{ width: "90px" }} />
               <h4 class="fw-bold">Ludorum && Code</h4>
             </div>
 

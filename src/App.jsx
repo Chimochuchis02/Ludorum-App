@@ -12,11 +12,7 @@ import FormClient from './Components/FormClient.jsx'
 function App() {
   return (
     <>
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh'
-      }}>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <NavBar />
 
         <main style={{ flex: 1 }}>
@@ -28,8 +24,7 @@ function App() {
                 <FormClient />
                 <Cards />
                 <Card_Us />
-              </>
-            } />
+              </>} />
 
             <Route path="/politics" element={<Politics />} />
           </Routes>

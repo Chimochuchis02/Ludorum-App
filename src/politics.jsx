@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
@@ -11,7 +10,7 @@ import ReactMarkdown from 'react-markdown';
 import politicasContent from './politics.md?raw';
 library.add(fas, far, fab)
 import './App.css'
-import App from './App.jsx'
+
 
 function NavBar() {
     return (
@@ -37,60 +36,6 @@ function NavBar() {
     );
 }
 
-function Footer() {
-    return (
-        <>
-            <footer className="page-footer font-small white pt-4 fixed-bottom" style={{ backgroundColor: '#350067' }}>
-                <div className="container-fluid text-center text-md-left">
-                    <div className="row">
-                        <div className="col-md-6 mt-md-0 mt-3 py-5">
-                            <h5 className="text-uppercase" id="title_footer">Ludorum && Code</h5>
-                            <p id="text_footer">
-                                Haciendo planes a tu lado, para que nada sea un sueño...
-                                <p id="text_footer">
-                                    sino, una realidad el dia de mañana.
-                                </p>
-                            </p>
-                        </div>
-
-                        <hr className="clearfix w-100 d-md-none pb-0" />
-
-                        <div className="col-md-3 mb-md-0 mb-3 py-2">
-                            <h5 className="text-uppercase" class="word_title">Navegacion</h5>
-                            <ul className="list-unstyled">
-                                <li><a href="#Us" class="word">Nosotros</a></li>
-                                <li><a href="#clients" class="word">Clientes</a></li>
-                                <li><a href="#pricing" class="word">Planes y precios</a></li>
-                                <li><a href="#politics" class="word">Politicas de seguridad</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="col-md-3 mb-md-0 mb-3 py-2">
-                            <h5 className="text-uppercase" class="word_title">Redes y Contacto</h5>
-                            <ul className="list-unstyled">
-                                <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-whatsapp" /></a></li>
-                                <li><a href="#" class="word"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a></li>
-                                <li><a href="wa:8711324475" class="word"> <FontAwesomeIcon icon="fa-solid fa-dog" /> </a></li>
-                                <li><a href="#" class="word"> <FontAwesomeIcon icon="fa-brands fa-instagram" /> </a> </li>
-                                <li><a href="#" class="word">contactoludorum@gmail.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="footer-copyright text-center py-5" class="word_copyright">
-                    <ul>
-                        © 2026 All Copyrights Are Reserved: Ludorum && Code.
-                    </ul>
-                </div>
-
-            </footer >
-        </>
-
-    )
-
-}
-
 function Info() {
     return (
         <>
@@ -108,19 +53,14 @@ function Info() {
     )
 }
 
-function Politics() {
+export default function Politics() {
     return (
         <>
 
             <NavBar />
-
-            <Info />
-
-            <Footer />
-
+            <div style={{ minHeight: '60vh', paddingBottom: '50px' }}>
+                <Info />
+            </div>
         </>
-
     )
 }
-
-export default Politics
