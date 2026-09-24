@@ -11,7 +11,7 @@ export default function Cards_Clients() {
                         <div className="col-lg-6 col-md-6">
                             <div
                                 className="client-card h-100"
-                                style={{ backgroundColor: '#650AFF', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 24px rgba(101, 10, 255, 0.3)' }}>
+                                style={{ backgroundColor: '#650AFF', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 24px rgba(101, 10, 255, 0.3)' }} id="clients">
 
                                 <div className="text-center pt-4 pb-2">
                                     <h5 style={{ color: '#FFF', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '2px', margin: 0 }}>

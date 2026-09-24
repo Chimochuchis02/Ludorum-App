@@ -8,6 +8,10 @@ body,
   background-color: #FFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #nav_title {
   color: #fff;
 }

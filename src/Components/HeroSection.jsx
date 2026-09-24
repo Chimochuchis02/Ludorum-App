@@ -44,7 +44,7 @@ export default function HeroSection() {
           />
         </div>
 
-        <Container className="my-5" style={{ position: "relative", zIndex: 1 }}>
+        <Container className="my-5" style={{ position: "relative", zIndex: 1 }} id="hero">
           <Row className="align-items-center">
             <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
               <span className="badge bg-primary mb-3">
@@ -62,21 +62,25 @@ export default function HeroSection() {
                 propio y a tu medida.
               </p>
               <div className="d-gap gap-3 d-sm-flex justify-content-center justify-content-lg-start">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  className="me-sm-2 mb-2 mb-sm-0"
-                  style={{ color: "#fff" }}
-                >
-                  Contactanos Ahora
-                </Button>
-                <Button
-                  variant="outline-secondary"
-                  size="lg"
-                  style={{ color: "#fff" }}
-                >
-                  Ver Planes y Precios
-                </Button>
+                <a href="#form">
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    className="me-sm-2 mb-2 mb-sm-0"
+                    style={{ color: "#fff" }}
+                  >
+                    Contactanos Ahora
+                  </Button>
+                </a>
+                <a href="#pricing">
+                  <Button
+                    variant="outline-secondary"
+                    size="lg"
+                    style={{ color: "#fff" }}
+                  >
+                    Ver Planes y Precios
+                  </Button>
+                </a>
               </div>
             </Col>
 

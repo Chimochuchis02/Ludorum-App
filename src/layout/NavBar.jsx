@@ -18,7 +18,7 @@ export default function NavBar() {
                         </Nav>
                         <Nav>
                             <Nav.Link as={Link} to="/politics" id="politica" class="nav_words">Politicas de seguridad</Nav.Link>
-                            <Nav.Link href="#contact" id="contacto" class="nav_word">Contacto</Nav.Link>
+                            <Nav.Link href="#form" id="contacto" class="nav_word">Contacto</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

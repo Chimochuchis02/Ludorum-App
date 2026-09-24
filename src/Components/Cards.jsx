@@ -3,7 +3,7 @@ import { CardGroup, Card } from 'react-bootstrap';
 export default function Cards() {
   return (
     <>
-      <CardGroup style={{ padding: "75px" }} className="gap-5" id="#pricing">
+      <CardGroup style={{ padding: "75px" }} className="gap-5" id="pricing">
         <Card style={{ backgroundColor: "#650AFF", borderRadius: "20px" }}>
           <Card.Body>
             <Card.Title>

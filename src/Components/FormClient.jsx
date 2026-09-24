@@ -52,10 +52,10 @@ export default function FormClient() {
 
         window.open(url, '_blank');
     }
-    
+
     return (
         <>
-            <div className="fullscreen">
+            <div className="fullscreen" id="form">
                 <section className="py-5 border-bottom" style={{ background: 'linear-gradient(90deg, #2D1045, #0A0510)' }}>
                     <Container className="my-5">
                         <Row className="align-items-center">

@@ -11,7 +11,7 @@ export default function Card_Us() {
           className="py-5 border-bottom"
           style={{ background: "linear-gradient(90deg, #2D1045, #0A0510)" }}
         >
-          <Container className="my-5">
+          <Container className="my-5" id="Us">
             <Row className="align-items-center">
               <Col lg={6} className="text-center text-lg-start mb-4 mb-lg-0">
                 <span className="badge bg-primary mb-3">
