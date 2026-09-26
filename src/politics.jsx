@@ -56,7 +56,6 @@ function Info() {
 export default function Politics() {
     return (
         <>
-
             <NavBar />
             <div style={{ minHeight: '60vh', paddingBottom: '50px' }}>
                 <Info />

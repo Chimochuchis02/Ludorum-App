@@ -2,7 +2,7 @@ html,
 body,
 #root {
   height: auto;
-  width: auto;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #FFFF;
@@ -18,13 +18,10 @@ html {
 
 footer {
   display: flex;
-  position: absolute;
   left: 0;
-  bottom: 0;
   right: 0;
   text-align: center;
   width: auto;
-  position: fixed;
   background-color: #FFFF;
 }
 
@@ -147,7 +144,7 @@ footer {
   color: #25D366 !important;
 }
 
-@media (max-width: 767px) {
+@media(min-width: 320px) and (max-width: 767px) {
 
   /* Aquí van todos los ajustes para móvil */
   .pricing-card-container,
