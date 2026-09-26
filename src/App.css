@@ -146,13 +146,7 @@ footer {
 
 @media(min-width: 320px) and (max-width: 767px) {
 
-  /* Aquí van todos los ajustes para móvil */
-  .pricing-card-container,
-  .row.g-4 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
+  /* Aqui van todos los ajustes para movil */
   .card {
     margin-bottom: 20px !important;
   }
