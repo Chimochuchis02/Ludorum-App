@@ -1,5 +1,5 @@
 ## TÉRMINOS, CONDICIONES Y POLÍTICAS DE SEGURIDAD
-**Última actualización:** 17/09/2026
+**Última actualización:** 28/09/2026
 
 ## 1. ACEPTACIÓN DE LOS TÉRMINOS
 Al contratar los servicios de **Ludorum && Code** (en adelante "el Desarrollador" o "nosotros"), el cliente (en adelante "el Cliente") acepta íntegramente los presentes términos y condiciones. Si no está de acuerdo con alguno de los puntos aquí descritos, le solicitamos no proceder con la contratación del servicio.
@@ -97,7 +97,7 @@ Los datos recopilados serán utilizados exclusivamente para:
 Los datos serán almacenados de forma segura y no serán compartidos con terceros sin el consentimiento del Cliente, salvo obligación legal.
 
 ### 8.4. Derechos del Cliente (ARCO)
-El Cliente puede ejercer en cualquier momento sus derechos de Acceso, Rectificación, Cancelación u Oposición de sus datos personales, enviando un correo a: **contactoludorum@gmail.com**
+El Cliente puede ejercer en cualquier momento sus derechos de Acceso, Rectificación, Cancelación u Oposición de sus datos personales, enviando un correo a: **contacto@ludorumstudio.com**
 
 ### 8.5. Cookies y analítica
 El sitio web de Ludorum && Code puede utilizar cookies técnicas necesarias para su funcionamiento. No se utilizan cookies de rastreo publicitario sin consentimiento.
@@ -144,11 +144,11 @@ Los planes de mantenimiento Base y Avanzado solo aplican para sistemas desarroll
 Ludorum && Code se reserva el derecho de modificar estos términos en cualquier momento. Las modificaciones entrarán en vigor a partir de su publicación en el sitio web oficial. Los proyectos ya contratados se regirán por los términos vigentes al momento de su contratación, salvo acuerdo en contrario.
 
 ## 14. LEY APLICABLE Y JURISDICCIÓN
-Estos términos se rigen por las leyes de los **Estados Unidos Mexicanos**. Cualquier controversia derivada de la interpretación o cumplimiento de estos términos será resuelta de mutuo acuerdo entre las partes. En caso de no llegar a un acuerdo, se someterá a los tribunales competentes del estado de [Tu estado, ej. Coahuila], México.
+Estos términos se rigen por las leyes de los **Estados Unidos Mexicanos**. Cualquier controversia derivada de la interpretación o cumplimiento de estos términos será resuelta de mutuo acuerdo entre las partes. En caso de no llegar a un acuerdo, se someterá a los tribunales competentes del estado de Coahuila, México.
 
 ## 15. CONTACTO
 Para cualquier duda, aclaración o ejercicio de derechos sobre estos términos o sus datos personales, puede contactarnos en:
-- **Correo electrónico:** contactoludorum@gmail.com
+- **Correo electrónico:** contacto@ludorumstudio.com
 - **WhatsApp:** +871 132 4475
 
 > *Al contratar los servicios de Ludorum && Code, el Cliente declara haber leído, entendido y aceptado íntegramente los presentes Términos, Condiciones y Políticas de Seguridad.*

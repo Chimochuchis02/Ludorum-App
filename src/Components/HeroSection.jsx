@@ -6,6 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import image from "./Gemini_Generated_Image_774omr774omr774o.png"
 library.add(fas, far, fab);
 
 export default function HeroSection() {
@@ -84,11 +85,9 @@ export default function HeroSection() {
               </div>
             </Col>
 
-            <Col lg={6} className="text-center">
-              <div className="p-4 bg-white shadow-sm rounded border">
-                <div className="bg-dark text-white p-5 rounded font-monospace text-start small">
-                  <img src="" />
-                </div>
+            <Col lg={6} className="text-center" >
+              <div className="p-4 shadow-sm">
+                <img src={image} alt="Desarrollo de software" className="img-fluid" style={{ maxHeight: '900px', objectFit: 'contain', borderRadius: '16px' }} />
               </div>
             </Col>
           </Row>
