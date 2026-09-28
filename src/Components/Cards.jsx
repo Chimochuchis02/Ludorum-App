@@ -1,6 +1,22 @@
 import { Card } from 'react-bootstrap';
 
 export default function Cards() {
+  const enviarWhatsApp = (tipoCotizacion) => {
+    const telefono = "528711324475";
+
+    const mensajes = {
+      sistemaUnico: "Hola, me interesa cotizar el Sistema Único de Ludorum Studio. ¿Podrían darme más información?",
+      mantenimientoBase: "Hola, me interesa el plan de Mantenimiento Base de Ludorum Studio. ¿Podrían darme más detalles?",
+      mantenimientoAvanzado: "Hola, me interesa el plan de Mantenimiento Avanzado de Ludorum Studio. ¿Podrían agendar una llamada?",
+    };
+
+    const mensaje = mensajes[tipoCotizacion] || "Hola, me interesa conocer los servicios de Ludorum Studio.";
+
+    const mensajeCodificado = encodeURIComponent(mensaje);
+
+    window.open(`https://wa.me/${telefono}?text=${mensajeCodificado}`, '_blank');
+  };
+
   return (
     <>
       <div className="row g-4 mt-5 mb-5 m-4" id="pricing">
@@ -29,13 +45,13 @@ export default function Cards() {
                   * Propiedad total del cliente (cero rentas).
                 </p>
               </Card.Text>
-              <button style={{ borderRadius: "16px" }}>
+              <button style={{ borderRadius: "16px" }} onClick={() => enviarWhatsApp('sistemaUnico')}>
                 Soliticar mas información
               </button>
             </Card.Body>
             <Card.Footer>
               <small style={{ color: "#FFFF" }}>
-                * ¡Disfruta tambien del 50% de este plan y los demas planes.
+                * Los precios pueden bajar o subir dependiendo del proyecto cotizado y la complejidad.
               </small>
             </Card.Footer>
           </Card>
@@ -66,7 +82,7 @@ export default function Cards() {
                 </p>
               </Card.Text>
 
-              <button style={{ borderRadius: "16px" }}>
+              <button style={{ borderRadius: "16px" }} onClick={() => enviarWhatsApp('mantenimientoBase')}>
                 Contratar Mantenimiento
               </button>
             </Card.Body>
@@ -101,7 +117,7 @@ export default function Cards() {
                   * Respaldos diarios en la nube e informes sobre los mismos.
                 </p>
               </Card.Text>
-              <button style={{ borderRadius: "16px" }}>
+              <button style={{ borderRadius: "16px" }} onClick={() => enviarWhatsApp('mantenimientoAvanzado')}>
                 ¡Escalar mi sistema AHORA!
               </button>
             </Card.Body>
